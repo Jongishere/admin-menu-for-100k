@@ -283,13 +283,13 @@ end
 
 local _players = {};
 
-RegisterNetEvent("atg-infinity:setPlayers")
-AddEventHandler("atg-infinity:setPlayers", function(cb)
+RegisterNetEvent("jong-infinity:setPlayers")
+AddEventHandler("jong-infinity:setPlayers", function(cb)
     _players = cb;
 end)
 
-RegisterNetEvent("atg-infinity:getPlayers")
-AddEventHandler("atg-infinity:getPlayers", function(cb)
+RegisterNetEvent("jong-infinity:getPlayers")
+AddEventHandler("jong-infinity:getPlayers", function(cb)
     return _players
 end)
 
