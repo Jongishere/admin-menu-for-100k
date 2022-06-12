@@ -719,16 +719,16 @@ Citizen.CreateThread(
                     Citizen.Wait(4)
                 end
 
-                TriggerEvent("atg-infinity:setPlayers", _players)
-                TriggerClientEvent("atg-infinity:setPlayers", tonumber("-1"), _players)
+                TriggerEvent("jong-infinity:setPlayers", _players)
+                TriggerClientEvent("jong-infinity:setPlayers", tonumber("-1"), _players)
             end
         end
     end
 )
 
-RegisterNetEvent("atg-infinity:getPlayers")
+RegisterNetEvent("jong-infinity:getPlayers")
 AddEventHandler(
-    "atg-infinity:getPlayers",
+    "jong-infinity:getPlayers",
     function(cb)
         cb(_players)
     end
